@@ -1,0 +1,181 @@
+{
+    "Windmill": {
+        "acceptsElectricity": false,
+        "electricityGeneration": {
+            "rate": 0.05,
+            "environmentFactor": "wind",
+            "type": "cubic"
+        },
+        "buildCost": 50,
+        "tiles": {
+            "default": {
+                "bounds":[0,0,2,2],
+                "frames":2,
+                "framerate":3
+            }
+        }
+    },
+    
+    "Solar panel": {
+        "acceptsElectricity": false,
+        "electricityGeneration": {
+            "rate": 2,
+            "environmentFactor": "sun",
+            "type": "linear"
+        },
+        "buildCost": 25,
+        "tiles": {
+            "default": {
+                "bounds":[0,2,2,2]
+            }
+        }
+    },
+    
+    "Coal": {
+        "acceptsElectricity": false,
+        "electricityGeneration": {
+            "rate": 40,
+            "environmentFactor": "timeofday",
+            "type": "duck"
+        },
+        "buildCost": 60,
+        "tiles": {
+            "default": {
+                "bounds": [2,2,2,2],
+                "frames": 2,
+                "framerate": 2.5
+            }
+        }
+    },
+    
+    "Nuclear": {
+        "acceptsElectricity": false,
+        "electricityGeneration": {
+            "rate": 250000000
+        },
+        "buildCost": 200,
+        "tiles": {
+            "default": {
+                "bounds": [6,2,2,2],
+                "frames": 2,
+                "framerate": 2.5
+            }
+        }
+    },
+
+    "Cable": {
+        "acceptsElectricity": true,
+        "buildCost": 5,
+        "tiles": {
+            "default": {
+                "bounds":[6,0,1,1]
+            },
+            "powered": {
+                "bounds":[6,1,1,1]
+            }
+        }
+    },
+    
+    "Model supplier": {
+        "acceptsElectricity": true,
+        "electricityGeneration": {
+            "rate": 100
+        },
+        "buildCost": 10,
+        "tiles": {
+            "default": {
+                "bounds":[0,8,2,2]
+            }
+        }
+    },
+    "Model consumer": {
+        "acceptsElectricity": true,
+        "electricityGeneration": {
+            "rate": -100
+        },
+        "profitable": 1.1,
+        "buildCost": 10,
+        "tiles": {
+            "default": {
+                "bounds":[2,8,2,2]
+            }
+        }
+    },
+
+    "House": {
+        "acceptsElectricity": true,
+        "electricityGeneration": {
+            "rate": -0.8,
+            "environmentFactor": "timeofday",
+            "type": "duck"
+        },
+        "profitable": 1.1,
+        "buildCost": 100,
+        "tiles": {
+            "default": {
+                "bounds":[2,4,2,2]
+            },
+            "powered": {
+                "bounds":[2,6,2,2]
+            }
+        }
+    },
+    
+    "City": {
+        "acceptsElectricity": true,
+        "electricityGeneration": {
+            "rate": -0.00001,
+            "environmentFactor": "cityConsumption",
+            "type": "linear"
+        },
+        "profitable": 1.3,
+        "buildCost": 100,
+        "tiles": {
+            "default": {
+                "bounds":[0,4,2,2]
+            },
+            "powered": {
+                "bounds":[0,6,2,2]
+            }
+        }
+    },
+    
+    "Real City": {
+        "acceptsElectricity": true,
+        "electricityGeneration": {
+            "rate": -1,
+            "environmentFactor": "cityConsumption",
+            "type": "linear"
+        },
+        "profitable": 1.5,
+        "buildCost": 1000,
+        "tiles": {
+            "default": {
+                "bounds":[4,8,2,2]
+            },
+            "powered": {
+                "bounds":[6,8,2,2]
+            }
+        }
+    },
+
+    "Grass": {
+        "acceptsElectricity": false,
+        "tiles": {
+            "default": {
+                "bounds":[4,6,4,2],
+                "shuffle":true
+            }
+        }
+    },
+
+    "Forest": {
+        "acceptsElectricity": false,
+        "tiles": {
+            "default": {
+                "bounds":[4,5,4,1],
+                "shuffle":true
+            }
+        }
+    }
+}

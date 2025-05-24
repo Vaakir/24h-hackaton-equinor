@@ -1,0 +1,13 @@
+{
+    "LCOE": "Estimated Levelized Cost of Energy (NOK/MWh) following the formula (Total lifetime costs) / (Total lifetime energy produced)",
+    "Lifespan": "The expected operational lifetime of the energy source in years.",
+    "CAPEX": "Capital expenditure, or initial investment cost for building the energy plant (in NOK).",
+    "OPEX": "Operating expenses, including maintenance, staffing, and other recurring costs (in NOK).",
+    "FuelCosts": "Fuel costs required for generating energy, typically 0 for renewable sources.",
+    "DecommissioningCosts": "The cost for decommissioning and dismantling the energy plant at the end of its lifespan (in NOK).",
+    "CapacityFactor": "The ratio of actual energy output to maximum possible output, indicating the efficiency of energy generation.",
+    "EnergyYield": "The total amount of energy expected to be produced over the lifespan of the energy source (in MWh).",
+    "DiscountRate": "The rate used to discount future costs and revenues to present value, typically based on market rates.",
+    "Subsidies": "Government or other subsidies provided to support the construction or operation of energy plants.",
+    "Efficiency": "The efficiency of the energy conversion process, indicating how much of the potential energy is converted to useful energy."
+}

@@ -1,0 +1,204 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #333;
+}
+
+#gameCanvas {
+    background-color: #000;
+    border: 1px solid #666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    image-rendering: pixelated;
+}
+
+#graphs {
+    /* background-color: rgba(226, 219, 213, 0.7); */
+    /* border: 3px solid rgb(71, 51, 55); */
+    position: fixed;
+    top: 14.4em;
+    bottom: 1em;
+    left: 1em;
+    width: 13em;
+}
+#graphs > img{
+    position: absolute;
+    top:-3.5em;
+    width: 80%;
+    right: 0;
+    transform: rotate(-10deg);
+}
+
+#shop {
+    background-color: rgba(226, 219, 213, 0.7);
+    border: 3px solid rgb(71, 51, 55);
+    position: fixed;
+    top: 8%;
+    bottom: 1em;
+    right: 1em;
+    width: 13em;
+}
+#shop > img{
+    position: absolute;
+    top:-3.5em;
+    width: 80%;
+    right: 0;
+    transform: rotate(10deg);
+}
+#shop > canvas{
+    width:6em;
+    height:6em;
+}
+
+.audio-control {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(226, 219, 213, 0.9);
+    border: 3px solid rgb(71, 51, 55);
+    padding: 8px;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.audio-control:hover {
+    background: rgba(226, 219, 213, 1);
+}
+
+.audio-control svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+.pause-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.pause-menu {
+    background: rgba(226, 219, 213, 0.95);
+    border: 3px solid rgb(71, 51, 55);
+    padding: 20px;
+    min-width: 300px;
+}
+
+.pause-menu h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(71, 51, 55);
+}
+
+.pause-menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pause-button {
+    background: #84505c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.pause-button:hover {
+    background: rgb(91, 71, 75);
+}
+
+/* Volume controls */
+.volume-control {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.volume-slider {
+    width: 100%;
+}
+
+.volume-label {
+    color: rgb(71, 51, 55);
+}
+
+/* Main Menu */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.menu {
+    background: rgba(226, 219, 213, 0.95);
+    border: 3px solid rgb(71, 51, 55);
+    padding: 40px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.menu h1 {
+    color: rgb(71, 51, 55);
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.menu h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #84505c;
+}
+
+.menu button {
+    display: block;
+    width: 240px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #84505c;
+    color: rgb(226, 219, 213);
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.menu button:hover {
+    background: rgb(91, 71, 75);
+}
