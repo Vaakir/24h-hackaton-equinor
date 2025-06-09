@@ -38,3 +38,6 @@ We drew inspiration from the `entity-component` software architecture which is c
 ### CODE - TODO (our excuse)
 Due to a lack of time (and sleep) (we did this in 12hours) (and experience) we had to compromise on code readability and scalability to deliver a workable product.
 This means we did not implement components, some css is written in .js, some .js was implemented in the .html and some values were hardcoded. In the end, we're extremely happy we got this far, but for further development, a through cleanup would be necessary. 
+
+The competition was harsh, but our group ran away with the price and the fame, well done everyone!
+![Picture of hackaton contenders](https://github.com/Vaakir/24h-hackaton-equinor/blob/main/docs/winners.jpg)
